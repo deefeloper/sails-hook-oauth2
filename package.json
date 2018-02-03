@@ -1,5 +1,5 @@
 {
-  "name": "sails-hook-oauth2",
+  "name": "sails-hook-oauth",
   "version": "0.0.1",
   "description": "OAuth2 implementation for sails",
   "author": "Dave Derichs",
