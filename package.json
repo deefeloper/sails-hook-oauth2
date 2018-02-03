@@ -1,0 +1,12 @@
+{
+  "name": "sails-hook-oauth2",
+  "version": "0.0.1",
+  "description": "OAuth2 sever for sails",
+  "author": "Dave Derichs",
+  "main": "index.js",
+  "sails": {
+    "isHook": true
+  },
+  "dependencies": {
+  }
+}
