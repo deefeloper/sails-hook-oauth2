@@ -1,8 +1,12 @@
 {
   "name": "sails-hook-oauth2",
   "version": "0.0.1",
-  "description": "OAuth2 sever for sails",
+  "description": "OAuth2 implementation for sails",
   "author": "Dave Derichs",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/deefeloper/sails-hook-oauth2.git"
+  },
   "main": "index.js",
   "sails": {
     "isHook": true
