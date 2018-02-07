@@ -11,6 +11,16 @@
   "sails": {
     "isHook": true
   },
-  "dependencies": {
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.8.0",
+    "mocha": "^4.0.1",
+    "randomstring": "^1.1.5",
+    "sails": "^0.12.14"
+  },
+  "scripts": {
+    "check": "npm run lint && npm run test:e2e",
+    "lint": "node ./node_modules/eslint/bin/eslint -c \".eslintrc.json\" \"**/*.js\"",
+    "test:e2e": "node ./node_modules/mocha/bin/mocha --exit --timeout 10000 ./test/e2e.bootstrap.js \"./test/**/*.e2e.js\""
   }
 }
