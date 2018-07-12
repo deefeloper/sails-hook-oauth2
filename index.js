@@ -11,7 +11,7 @@ module.exports = function (sails) {
         sails.router.bind('POST /oauth2/login', require('./lib/handlers/login')(sails, hook, sails.config[hook.configKey]));
         sails.router.bind('POST /oauth2/token', require('./lib/handlers/token')(sails, hook, sails.config[hook.configKey]));
 
-        sails.router.bind('GET,POST,PATCH,PUT,DELETE r|^/(?!oauth2/)|', require('./lib/middleware/authorization')(sails, hook, sails.config[hook.configKey]));
+        sails.router.bind('GET,POST,PATCH,PUT,DELETE r|\\^\\/\\(\\?\\!oauth2\\/\\)|', require('./lib/middleware/authorization')(sails, hook, sails.config[hook.configKey]));
 
         sails.log.verbose('OAuth2 hook', 'loaded server routes and auth middleware');
 
