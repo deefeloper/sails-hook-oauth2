@@ -11,6 +11,5 @@
   "sails": {
     "isHook": true
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
